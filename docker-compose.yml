@@ -1,0 +1,14 @@
+version: "3"
+services:
+  frontend:
+    container_name: frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - /etc/ssl/certs/ai.crt:/etc/ssl/certs/ai.crt
+      - /etc/ssl/private/ai.key:/etc/ssl/private/ai.key
+      - /var/local/aias/data/nginx/logs:/etc/nginx/log/
