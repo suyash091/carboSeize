@@ -5,11 +5,11 @@ function Copyright({className, ...restProps}) {
     return (
         <div className={dsnCN('copyright', className)} {...restProps}>
             <div className="text-center">
-                <p>© {new Date().getFullYear()} Droow Digital Agency</p>
+                <p>© {new Date().getFullYear()} CarboSeize</p>
                 <div className="copyright-text over-hidden">
                     Designed by
                     <a href="0#" target="_blank">
-                        DSN Grid
+                        Suyash Dixit
                     </a>
                 </div>
             </div>
